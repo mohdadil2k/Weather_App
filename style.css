@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:url('https://source.unsplash.com/1600x900/?Chennai');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Oswald',sans-serif;
+
+}
+.container{
+    background-color: rgba(0, 0, 0,.69);
+    max-width: 420px;
+    color: white;
+    width:100%;
+    padding: 30px;
+    border-radius: 30px;   
+}
+.container .location{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    color:darkgrey;
+    position: relative;
+    left:45%;
+    display: inline-block;
+    cursor: pointer;
+}
+.location::after{
+    content:""; /*to view your location's weather */
+    font-size: 15px;
+    background-color: black;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    left: -40%;
+    font-family: serif;
+}
+.location:hover{
+    color: #fff;
+}
+.location:hover::after{
+    content: "to view your location's weather";
+    color:#fff ;
+}
+.search input{
+    width:calc(100% - 50px);
+    outline: none;
+    border: none;
+    padding: 10px 1em;
+    border-radius: 25px;
+    margin: 10px 0;
+    color: white;
+    background-color: rgba(130, 127, 127, 0.2);
+    font-size: 18px;
+}
+.search button{
+    background-color: rgba(130, 127, 127, 0.2);
+    color: white;
+    border: none;
+    outline: none;
+    padding:9px 10px ;
+    border-radius: 20px;
+    margin-left: 4px;
+}
+.search button:hover{    
+    background-color: rgba(130, 127, 127, 0.6);
+}
+.place-div h3,.place-div h1{
+    font-weight: 400 ;
+    font-size:30px;
+}
+.description{
+    display: flex;
+    flex-direction:row;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.description h3{
+    margin-top: 9px;
+}
+.about p{
+    font-weight: 400;
+    font-size:19px;
+}
