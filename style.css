@@ -37,7 +37,7 @@ body{
     cursor: pointer;
 }
 .location::after{
-    content:""; /*to view your location's weather */
+    content:"";
     font-size: 15px;
     background-color: black;
     display: inline-block;
@@ -51,7 +51,7 @@ body{
     color: #fff;
 }
 .location:hover::after{
-    content: "to view your location's weather";
+    content: "Click to view your location's weather";
     color:#fff ;
 }
 .search input{
